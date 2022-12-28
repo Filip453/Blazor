@@ -1,0 +1,52 @@
+﻿@page "/Converters"
+@using SDPBlazor.Pages.Converters
+<h3>Converters</h3>
+<div class="col-md-6">
+    <select @bind="_selectedId" class="form-select mb-3">
+        @foreach (var converter in _availableConverters)
+        {
+            <option value="@converter.Id">@converter.NameOfConverter</option>
+        }
+    </select>
+
+    @switch (_selectedId)
+    {
+        case 1:
+            <TimeConverter></TimeConverter>
+            break;
+        case 2:
+            <Distanse OdlegloscMnoznik="0.0254"></Distanse>
+            break;
+        case 3:
+            <CurrencyConverter ExchangeRate="4.59"></CurrencyConverter>
+            break;
+        default:
+            <span>please select converter....</span>
+            break;
+    }
+
+</div>
+
+@code {
+    int _selectedId;
+    class ConverterItem
+    {
+        public ConverterItem(int id, string nameOfConverter)
+        {
+            Id = id;
+            NameOfConverter = nameOfConverter;
+
+        }
+
+        public int Id { get; set; }
+        public string NameOfConverter { get; set; }
+    }
+    readonly List<ConverterItem> _availableConverters = new List<ConverterItem>()
+
+{
+new ConverterItem(1, "Time converter"),
+new ConverterItem(2,"distance converter"),
+new ConverterItem(3, "currency converter")
+};
+
+}

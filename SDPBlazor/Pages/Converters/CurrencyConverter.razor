@@ -1,0 +1,29 @@
+﻿@page "/CurrencyConverter"
+<h1>Currency Converter</h1>
+
+<p>Enter the amount of dollars you want to convert:</p>
+<input type="text" @bind="DollarAmount" />
+
+<p>Enter the exchange rate (optional, default is 4.59):</p>
+<input type="text" @bind="ExchangeRate" />
+
+<button @onclick="ConvertCurrency">Convert</button>
+
+@if (Result != 0)
+{
+    <p>Result: @Result zł</p>
+}
+
+@code {
+    [Parameter]
+    public double ExchangeRate { get; set; } = 4.59; // default exchange rate if not specified by user
+
+    public double DollarAmount { get; set; }
+    public double Result { get; set; }
+
+    public void ConvertCurrency()
+    {
+        // Convert dollar amount to zł using the specified exchange rate (or the default if not specified)
+        Result = DollarAmount * ExchangeRate;
+    }
+}

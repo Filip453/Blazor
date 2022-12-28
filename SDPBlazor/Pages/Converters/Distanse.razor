@@ -1,0 +1,30 @@
+﻿
+<label for="metr" class="form-label">Metry</label>
+    <input type="number" class="form-control" id="Metry" placeholder="Metry" @bind="Godziny" @bind:event="oninput" />
+
+@if (_second != null)
+{
+    <div class="mt-4">
+        <span>W @_hours mamy @_second inczy</span>
+    </div>
+}
+
+@code {
+
+    [Parameter]
+    public double OdlegloscMnoznik { get; set; } 
+    double? _hours = null;
+    double? _second = null;
+
+    double? Godziny
+
+    {
+        get => _hours;
+        set
+        {
+            _hours = value;
+            _second = value / OdlegloscMnoznik;
+        }
+
+    }
+}

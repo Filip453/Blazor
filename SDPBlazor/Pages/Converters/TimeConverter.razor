@@ -1,0 +1,24 @@
+﻿    <div>
+        <label for="hour" class="form-label">Godziny</label>
+        <input type="number" class="form-control" id="hour" placeholder="godziny" @bind="_hours" />
+    </div>
+    <button typr="submit" class="btn btn-primary mt-4" @onclick="Konwertuj">
+        <span class="oi oi oi-clock me-2" aria-hidden="true"></span>Konwertuj
+    </button>
+    @if (_second != null){
+        <div class="mt-4">
+            <span>W @_hours mamy @_second sekund</span>
+        </div>
+    }
+
+@code {
+    int? _second = null;
+    int? _hours = null;
+
+
+    private void Konwertuj()
+    {
+        _second = _hours * 3600;
+    }
+
+}
