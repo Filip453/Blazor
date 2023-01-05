@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XIbfjsxzDkFuNGH8s2mj8dh8W4BzKPi1dwhuaqw/zKOgjPtOq2VovU7UMPs2WpZb2MBlDm3c9kPDDt291xhW6Q==",
+  "dgSpecHash": "DbGQds6z9Tms5HuRuevPTYWsLMyoSqDeOwLO9PgGAKXTUQrCO1yrv/3l5j8viI1SvOTSoiOGwT8dddQAjANlRA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Filip\\Desktop\\gl\\SDPBlazor\\SDPBlazor\\SDPBlazor.csproj",
   "expectedPackageFiles": [
@@ -29,6 +29,7 @@
     "C:\\Users\\Filip\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\Filip\\.nuget\\packages\\microsoft.jsinterop\\6.0.10\\microsoft.jsinterop.6.0.10.nupkg.sha512",
     "C:\\Users\\Filip\\.nuget\\packages\\microsoft.jsinterop.webassembly\\6.0.10\\microsoft.jsinterop.webassembly.6.0.10.nupkg.sha512",
+    "C:\\Users\\Filip\\.nuget\\packages\\mudblazor\\6.1.2\\mudblazor.6.1.2.nupkg.sha512",
     "C:\\Users\\Filip\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\Filip\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512",
     "C:\\Users\\Filip\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
